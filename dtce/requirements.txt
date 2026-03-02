@@ -1,0 +1,7 @@
+psutil==5.9.8
+pynput==1.7.6
+networkx==3.2.1
+SQLAlchemy[asyncio]
+aiosqlite
+pytest
+pytest-asyncio
