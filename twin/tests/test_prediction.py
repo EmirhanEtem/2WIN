@@ -2,8 +2,8 @@ import pytest
 import asyncio
 from typing import List, Tuple
 
-from dtce.core.interfaces import IPredictionModel
-from dtce.prediction.engine import PredictionEngine
+from twin.core.interfaces import IPredictionModel
+from twin.prediction.engine import PredictionEngine
 
 class MockMarkovModel(IPredictionModel):
     def fit(self) -> None:

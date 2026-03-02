@@ -13,7 +13,7 @@ class AsyncEventRepository(IEventRepository):
     Fully asynchronous SQLAlchemy repository using aiosqlite.
     Prevents background storage I/O from blocking the main event loop.
     """
-    def __init__(self, db_path: str = "sqlite+aiosqlite:///dtce_history_v2.db"):
+    def __init__(self, db_path: str = "sqlite+aiosqlite:///twin_history_v2.db"):
         self.engine = create_async_engine(db_path, echo=False)
         self.async_session = async_sessionmaker(
             self.engine, expire_on_commit=False, class_=AsyncSession
